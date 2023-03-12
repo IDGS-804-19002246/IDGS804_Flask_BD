@@ -5,7 +5,7 @@ from wtforms import EmailField
 from wtforms import validators
 
 class UserForm(Form):
-    Id = IntegerField('Id',
+    id = IntegerField('id',
         [validators.number_range
         (min=1,max=20,message='valor no valido')])
     nombre = StringField('Nombre',
